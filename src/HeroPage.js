@@ -51,7 +51,7 @@ export default function Example() {
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 text-5xl">
               {/* <span className="block">Saichandu Juluri</span>  */}
               <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 text-xl">Developed 3D web applications in ADAS domain</p>
-              <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 text-xl">Experienced the realworld use of the r3f library and interacted with authors of the drei library through twitter, discord and github while developing web annotation tool</p>
+              <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 text-xl">Experienced the realworld use of the r3f library and interacted with authors of the drei library through twitter, discord and github while developing 3D web apps</p>
             </h1>
           {/* </div> */}
         </div>

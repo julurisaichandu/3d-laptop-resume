@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+import { Analytics } from '@vercel/analytics/react';
 import React, { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei'
@@ -45,10 +46,11 @@ function Model(props) {
 
 export default function App() {
   return (
+    <>
     <Canvas camera={{ position: [-5, 0, -15], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
-        <group rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
+        <group scale={[1.25,1.25,1.25]} rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
           <Model />
         </group>
         <Environment preset="city" />
@@ -56,5 +58,7 @@ export default function App() {
       <ContactShadows position={[0, -4.5, 0]} scale={20} blur={2} far={4.5} />
       <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
     </Canvas>
+    <Analytics/>
+    </>
   )
 }

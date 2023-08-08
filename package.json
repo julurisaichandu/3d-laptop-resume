@@ -13,12 +13,12 @@
     "@heroicons/react": "1.0.6",
     "@react-three/drei": "9.76.0",
     "@react-three/fiber": "8.13.3",
+    "@vercel/analytics": "^1.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
     "three": "0.153.0"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
