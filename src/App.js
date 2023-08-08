@@ -50,7 +50,7 @@ export default function App() {
     <Canvas camera={{ position: [-5, 0, -15], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
-        <group scale={[1.25,1.25,1.25]} rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
+        <group scale={[1,1,1]} rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
           <Model />
         </group>
         <Environment preset="city" />
